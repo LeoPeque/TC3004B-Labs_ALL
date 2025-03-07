@@ -16,7 +16,6 @@ import Layout from './pages/Layout';
 const App = () => {
   return (
     <div>
-      <h1>Routes</h1>
       <Layout />
       <Routes>
         <Route path="Dashboard" element={<Dashboard />} />
