@@ -12,13 +12,13 @@ import {
 } from "reactstrap";
 
 const initialData = [
-  { id: 1, nombre: "Jorge Carranza", empresa: "Tec" },
-  { id: 2, nombre: "Ramon Velez", empresa: "Banorte" },
-  { id: 3, nombre: "Hugo Sanchez", empresa: "Real Madrid" },
-  { id: 4, nombre: "Rafael Marquez", empresa: "Barcelona" },
-  { id: 5, nombre: "Sergio Perez", empresa: "Oracle Red Bull Racing" },
-  { id: 6, nombre: "Max Verstapen", empresa: "Oracle Red Bull Racing" },
-  { id: 7, nombre: "Carlos Sainz", empresa: "Williams Racing" },
+  { id: 1, nombre: "Jorge Carranza", empresa: "Tec", puesto: "CEO", expertise: "Senior", edad: 45 },
+  { id: 2, nombre: "Ramon Velez", empresa: "Banorte", puesto: "CTO", expertise: "Senior", edad: 42 },
+  { id: 3, nombre: "Hugo Sanchez", empresa: "Real Madrid", puesto: "Director", expertise: "Senior", edad: 53 },
+  { id: 4, nombre: "Rafael Marquez", empresa: "Barcelona", puesto: "Gerente", expertise: "Mid-level", edad: 37 },
+  { id: 5, nombre: "Sergio Perez", empresa: "Oracle Red Bull Racing", puesto: "Piloto", expertise: "Expert", edad: 34 },
+  { id: 6, nombre: "Max Verstapen", empresa: "Oracle Red Bull Racing", puesto: "Piloto", expertise: "Expert", edad: 27 },
+  { id: 7, nombre: "Carlos Sainz", empresa: "Williams Racing", puesto: "Piloto", expertise: "Senior", edad: 30 },
 ];
 
 const Manager = () => {
