@@ -42,6 +42,10 @@ const Manager = () => {
   };
 
   const mostrarModalInsertar = () => {
+    setForm({
+      ...form,
+      id: data.length + 1
+    });
     setModalInsertar(true);
   };
 
