@@ -42,10 +42,6 @@ const Manager = () => {
   };
 
   const mostrarModalInsertar = () => {
-    setForm({
-      ...form,
-      id: data.length + 1
-    });
     setModalInsertar(true);
   };
 
@@ -64,7 +60,7 @@ const Manager = () => {
 
   const insertar = () => {
     const newEntry = {
-      id: parseInt(form.id) || data.length + 1,
+      id: data.length + 1,
       nombre: form.nombre,
       empresa: form.empresa,
       puesto: form.puesto,
@@ -147,10 +143,9 @@ const Manager = () => {
             <label>Id: </label>
             <input
               className="form-control"
-              name="id"
-              type="number"
+              readOnly
+              type="text"
               value={data.length + 1}
-              onChange={handleChange}
             />
           </FormGroup>
 
@@ -227,10 +222,9 @@ const Manager = () => {
             <label>Id: </label>
             <input
               className="form-control"
-              name="id"
-              type="number"
+              readOnly
+              type="text"
               value={form.id}
-              onChange={handleChange}
             />
           </FormGroup>
 
