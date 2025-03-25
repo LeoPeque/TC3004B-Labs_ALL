@@ -168,6 +168,36 @@ const Manager = () => {
               onChange={handleChange}
             />
           </FormGroup>
+
+          <FormGroup>
+            <label>Puesto: </label>
+            <input
+              className="form-control"
+              name="puesto"
+              type="text"
+              onChange={handleChange}
+            />
+          </FormGroup>
+
+          <FormGroup>
+            <label>Expertise: </label>
+            <input
+              className="form-control"
+              name="expertise"
+              type="text"
+              onChange={handleChange}
+            />
+          </FormGroup>
+
+          <FormGroup>
+            <label>Edad: </label>
+            <input
+              className="form-control"
+              name="edad"
+              type="number"
+              onChange={handleChange}
+            />
+          </FormGroup>
         </ModalBody>
 
         <ModalFooter>
