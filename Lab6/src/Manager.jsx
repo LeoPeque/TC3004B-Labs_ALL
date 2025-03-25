@@ -99,6 +99,9 @@ const Manager = () => {
               <th>ID</th>
               <th>Nombre</th>
               <th>Empresa</th>
+              <th>Puesto</th>
+              <th>Expertise</th>
+              <th>Edad</th>
               <th>Acción</th>
             </tr>
           </thead>
@@ -108,6 +111,9 @@ const Manager = () => {
                 <td>{dato.id}</td>
                 <td>{dato.nombre}</td>
                 <td>{dato.empresa}</td>
+                <td>{dato.puesto}</td>
+                <td>{dato.expertise}</td>
+                <td>{dato.edad}</td>
                 <td>
                   <Button
                     color="primary"
