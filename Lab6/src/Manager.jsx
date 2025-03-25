@@ -60,7 +60,7 @@ const Manager = () => {
 
   const insertar = () => {
     const newEntry = {
-      id: data.length + 1,
+      id: parseInt(form.id) || data.length + 1,
       nombre: form.nombre,
       empresa: form.empresa,
       puesto: form.puesto,
