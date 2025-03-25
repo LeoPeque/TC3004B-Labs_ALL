@@ -143,9 +143,10 @@ const Manager = () => {
             <label>Id: </label>
             <input
               className="form-control"
-              readOnly
-              type="text"
+              name="id"
+              type="number"
               value={data.length + 1}
+              onChange={handleChange}
             />
           </FormGroup>
 
