@@ -12,13 +12,13 @@ import {
 } from "reactstrap";
 
 const initialData = [
-  { id: 1, nombre: "Jorge Carranza", empresa: "Tec", puesto: "CEO", expertise: "Senior", edad: 45 },
-  { id: 2, nombre: "Ramon Velez", empresa: "Banorte", puesto: "CTO", expertise: "Senior", edad: 42 },
-  { id: 3, nombre: "Hugo Sanchez", empresa: "Real Madrid", puesto: "Director", expertise: "Senior", edad: 53 },
-  { id: 4, nombre: "Rafael Marquez", empresa: "Barcelona", puesto: "Gerente", expertise: "Mid-level", edad: 37 },
-  { id: 5, nombre: "Sergio Perez", empresa: "Oracle Red Bull Racing", puesto: "Piloto", expertise: "Expert", edad: 34 },
-  { id: 6, nombre: "Max Verstapen", empresa: "Oracle Red Bull Racing", puesto: "Piloto", expertise: "Expert", edad: 27 },
-  { id: 7, nombre: "Carlos Sainz", empresa: "Williams Racing", puesto: "Piloto", expertise: "Senior", edad: 30 },
+  { id: 1, nombre: "Jorge Carranza", departamento: "IT", puesto: "Software Developer", nivel: "Senior", salario: 85000 },
+  { id: 2, nombre: "Ramon Velez", departamento: "Marketing", puesto: "Marketing Specialist", nivel: "Mid-level", salario: 65000 },
+  { id: 3, nombre: "Hugo Sanchez", departamento: "IT", puesto: "System Administrator", nivel: "Senior", salario: 78000 },
+  { id: 4, nombre: "Rafael Marquez", departamento: "HR", puesto: "HR Manager", nivel: "Senior", salario: 72000 },
+  { id: 5, nombre: "Sergio Perez", departamento: "Finance", puesto: "Financial Analyst", nivel: "Expert", salario: 90000 },
+  { id: 6, nombre: "Max Verstapen", departamento: "IT", puesto: "Data Scientist", nivel: "Expert", salario: 95000 },
+  { id: 7, nombre: "Carlos Sainz", departamento: "Sales", puesto: "Sales Representative", nivel: "Mid-level", salario: 68000 },
 ];
 
 const Manager = () => {
