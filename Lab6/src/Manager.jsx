@@ -98,10 +98,10 @@ const Manager = () => {
             <tr>
               <th>ID</th>
               <th>Nombre</th>
-              <th>Empresa</th>
+              <th>Departamento</th>
               <th>Puesto</th>
-              <th>Expertise</th>
-              <th>Edad</th>
+              <th>Nivel</th>
+              <th>Salario</th>
               <th>Acción</th>
             </tr>
           </thead>
