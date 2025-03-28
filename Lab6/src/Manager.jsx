@@ -160,10 +160,10 @@ const Manager = () => {
           </FormGroup>
 
           <FormGroup>
-            <label>Empresa: </label>
+            <label>Departamento: </label>
             <input
               className="form-control"
-              name="empresa"
+              name="departamento"
               type="text"
               onChange={handleChange}
             />
@@ -180,20 +180,20 @@ const Manager = () => {
           </FormGroup>
 
           <FormGroup>
-            <label>Expertise: </label>
+            <label>Nivel: </label>
             <input
               className="form-control"
-              name="expertise"
+              name="nivel"
               type="text"
               onChange={handleChange}
             />
           </FormGroup>
 
           <FormGroup>
-            <label>Edad: </label>
+            <label>Salario: </label>
             <input
               className="form-control"
-              name="edad"
+              name="salario"
               type="number"
               onChange={handleChange}
             />
