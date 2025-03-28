@@ -28,10 +28,10 @@ const Manager = () => {
   const [form, setForm] = useState({
     id: '',
     nombre: '',
-    empresa: '',
+    departamento: '',
     puesto: '',
-    expertise: '',
-    edad: ''
+    nivel: '',
+    salario: ''
   });
 
   const handleChange = (e) => {
