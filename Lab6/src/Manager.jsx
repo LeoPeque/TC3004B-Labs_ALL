@@ -134,7 +134,7 @@ const Manager = () => {
       <Modal isOpen={modalInsertar}>
         <ModalHeader>
           <div>
-            <h3>Insertar nombre</h3>
+            <h3>Insertar Empleado</h3>
           </div>
         </ModalHeader>
 
