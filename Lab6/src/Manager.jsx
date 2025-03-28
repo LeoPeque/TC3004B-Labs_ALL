@@ -110,10 +110,10 @@ const Manager = () => {
               <tr key={dato.id}>
                 <td>{dato.id}</td>
                 <td>{dato.nombre}</td>
-                <td>{dato.empresa}</td>
+                <td>{dato.departamento}</td>
                 <td>{dato.puesto}</td>
-                <td>{dato.expertise}</td>
-                <td>{dato.edad}</td>
+                <td>{dato.nivel}</td>
+                <td>{dato.salario}</td>
                 <td>
                   <Button
                     color="primary"
