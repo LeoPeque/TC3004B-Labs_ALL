@@ -62,10 +62,10 @@ const Manager = () => {
     const newEntry = {
       id: data.length + 1,
       nombre: form.nombre,
-      empresa: form.empresa,
+      departamento: form.departamento,
       puesto: form.puesto,
-      expertise: form.expertise,
-      edad: parseInt(form.edad) || 0
+      nivel: form.nivel,
+      salario: parseInt(form.salario) || 0
     };
     setData([...data, newEntry]);
     setModalInsertar(false);
