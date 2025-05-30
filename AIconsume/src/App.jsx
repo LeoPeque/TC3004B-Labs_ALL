@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 function App() {
+  const [input, setInput] = useState('');
   const [response, setResponse] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -9,23 +10,18 @@ function App() {
     setLoading(true);
     const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
-    // Check if API key exists
-    if (!apiKey) {
-      setResponse("Error: VITE_GEMINI_API_KEY not found in environment variables.");
-      setLoading(false);
-      return;
-    }
+    const genAI = new GoogleGenerativeAI(apiKey);
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+
+    let response;
 
     try {
-      const genAI = new GoogleGenerativeAI(apiKey);
-      const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
-
       const result = await model.generateContent("Say something inspiring!");
-      const text = await result.response.text();
+      const text = result.response.text();
       setResponse(text);
     } catch (error) {
-      console.error('Gemini API Error:', error);
-      setResponse(`Error contacting Gemini API: ${error.message}`);
+      console.error(error);
+      setResponse("error contacting gemini");
     }
 
     setLoading(false);
