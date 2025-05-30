@@ -16,7 +16,7 @@ function App() {
     let response;
 
     try {
-      const result = await model.generateContent("Say something inspiring!");
+      const result = await model.generateContent(input || "Say something inspiring!");
       const text = result.response.text();
       setResponse(text);
     } catch (error) {
