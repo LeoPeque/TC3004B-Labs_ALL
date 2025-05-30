@@ -30,6 +30,13 @@ function App() {
   return (
     <div style={{ padding: '2rem' }}>
       <h1>Gemini React Demo</h1>
+      <input 
+        type="text" 
+        value={input} 
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Ask something..."
+        style={{ width: '300px', padding: '8px', marginRight: '10px' }}
+      />
       <button onClick={callGemini} disabled={loading}>
         {loading ? 'Thinking...' : 'Talk to Gemini'}
       </button>
